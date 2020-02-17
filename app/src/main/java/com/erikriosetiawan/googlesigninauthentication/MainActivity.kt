@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             .build()
 
         // Build a GoogleSignInClient with the options specified by googleSignInOptions
-        val mGoogleSignInClient = GoogleSignIn.getClient(this, googleSignInOptions)
+        mGoogleSignInClient = GoogleSignIn.getClient(this, googleSignInOptions)
 
         // Set the dimensions of the sign-in button
         binding.buttonSignInWithGoogle.setSize(SignInButton.SIZE_WIDE)
@@ -167,10 +167,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 revokeAccess()
             }
         }
-    }
-
-    override fun onPointerCaptureChanged(hasCapture: Boolean) {
-        super.onPointerCaptureChanged(hasCapture)
     }
 
     private fun setButtonListener() {

@@ -4,7 +4,7 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
-// apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 29
@@ -37,7 +37,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:19.2.0'
 
     // Google Sign-In SDK (Only required for Google Sign-In)
-    // implementation 'com.google.android.gms:play-services-auth:17.0.0'
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
 
     // Testing
     testImplementation 'junit:junit:4.12'
